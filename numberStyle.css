@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #99e7ed;
+    overflow: hidden;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+#game-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 60px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.spark {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: gold;
+    border-radius: 50%;
+    animation: sparkle 1.5s ease-out forwards;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3) translateY(-200px);
+        opacity: 0;
+    }
+}
+
+.loss-background {
+    background-color: #ffcccc;
+    transition: background-color 0.5s;
+}
+
+.win-background {
+    background-color: #e6ffee;
+    transition: background-color 0.5s;
+}

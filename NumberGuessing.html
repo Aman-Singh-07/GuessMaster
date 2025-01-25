@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="numberStyle.css">
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <p>Welcome to the game! Try to guess the number between 1 and 100.</p>
+    <div id="game-container">
+        <label for="guess">Enter your guess: </label>
+        <input type="number" id="guess" min="1" max="100">
+        <button id="submit-btn">Submit Guess</button>
+
+        <p id="result"></p>
+        <p id="attempts">Attempts: 0</p>
+        <p id="message"></p>
+    </div>
+    <audio id="win-sound" src="C:\Users\Lenovo\Downloads\mixkit-ethereal-fairy-win-sound-2019.wav"></audio>
+    <audio id="lose-sound" src="C:\Users\Lenovo\Downloads\game-over-arcade-6435.mp3"></audio>
+    <audio id="background-music" src="C:\Users\Lenovo\Downloads\game-music-loop-1-143979.mp3" loop></audio>
+    <script src="game.js"></script>
+</body>
+</html>
